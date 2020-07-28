@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/swipe.iml" filepath="$PROJECT_DIR$/.idea/swipe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/swiper.iml" filepath="$PROJECT_DIR$/.idea/swiper.iml" />
     </modules>
   </component>
 </project>
