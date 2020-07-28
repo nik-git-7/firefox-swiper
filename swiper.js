@@ -1,3 +1,6 @@
+const SPEED = 4;
+const MIN_DELTA = 100;
+
 let totalWheel = 0;
 let timeout;
 let html = document.querySelector('body');
@@ -60,11 +63,11 @@ window.addEventListener("wheel", function (e) {
 
 function fire(deltaX) {
     clearTimeout(timeout);
-    totalWheel -= 2 * deltaX;
+    totalWheel -= SPEED * deltaX;
     html.style.transform = "translateX(" + totalWheel + "px)";
-    if (totalWheel > 150) {
+    if (totalWheel > MIN_DELTA) {
         back();
-    } else if (totalWheel < -150) {
+    } else if (totalWheel < -1 * MIN_DELTA) {
         forward();
     } else {
         clear();
